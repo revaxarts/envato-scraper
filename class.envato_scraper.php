@@ -313,7 +313,7 @@ class envato_scraper{
         
         $result = $this->_get_url($this->main_marketplace.'/item/goto/'.$item_id.'/comments', $post, false);
         
-        return preg_match('#<div class="notice flash">(\s*)<p>Your reply was added<\/p>(\s*)<\/div>#', $result);
+        return preg_match('#<div class="notice flash">(\s*)<p>Your reply was added\.<\/p>(\s*)<\/div>#', $result);
        
     }
 
